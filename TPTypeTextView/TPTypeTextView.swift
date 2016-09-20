@@ -42,7 +42,7 @@ class TPTypeTextView: UITextView {
     
     func showImmediately() {
         text = typingText
-        typingIndex = typingText.lengthOfBytes(using: String.Encoding.utf8) - 1
+        typingIndex = typingText.characters.count
         complete()
     }
     
