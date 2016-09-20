@@ -41,8 +41,8 @@ class TPTypeTextView: UITextView {
     }
     
     func showImmediately() {
-        text = typingText;
-        typingIndex = typingText.lengthOfBytes(using: String.Encoding.utf8) - 1;
+        text = typingText
+        typingIndex = typingText.lengthOfBytes(using: String.Encoding.utf8) - 1
         complete()
     }
     
@@ -70,7 +70,7 @@ class TPTypeTextView: UITextView {
     }
     
     private func isFinishedTyping() -> Bool {
-        return (typingText.characters.count == text.characters.count);
+        return (typingText.characters.count == text.characters.count)
     }
     
     private func complete() {
@@ -84,7 +84,7 @@ class TPTypeTextView: UITextView {
     }
     
     private func stopTimer() {
-        timer?.invalidate();
+        timer?.invalidate()
         timer = nil
     }
     
