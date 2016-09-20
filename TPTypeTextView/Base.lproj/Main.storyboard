@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TPTypeTextView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYt-cn-LH8" customClass="TPTypeTextView" customModule="TPTypeTextView" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teh-Lv-SfH">
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="didSelectClearButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yml-xJ-Sqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-Ml-dl8">
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="didSelectStartButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1X-6z-bN9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lG-Dp-gRJ">
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="didSelectStopButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hds-jz-eVc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpf-Fn-ShY">
+                                <state key="normal" title="Show All"/>
+                                <connections>
+                                    <action selector="didSelectShowAllButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxN-qG-EPi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="teh-Lv-SfH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7vQ-0j-pM5"/>
+                            <constraint firstItem="4lG-Dp-gRJ" firstAttribute="width" secondItem="teh-Lv-SfH" secondAttribute="width" id="9rA-fI-qEK"/>
+                            <constraint firstItem="4lG-Dp-gRJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F45-uT-gHL"/>
+                            <constraint firstItem="Wpf-Fn-ShY" firstAttribute="leading" secondItem="teh-Lv-SfH" secondAttribute="trailing" constant="8" id="H6t-Kq-B6k"/>
+                            <constraint firstItem="k3c-Ml-dl8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IMT-E9-vMD"/>
+                            <constraint firstAttribute="trailing" secondItem="Wpf-Fn-ShY" secondAttribute="trailing" constant="16" id="K3S-0Y-hhx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PYt-cn-LH8" secondAttribute="bottom" constant="20" id="Q0f-cr-gjl"/>
+                            <constraint firstItem="teh-Lv-SfH" firstAttribute="width" secondItem="Wpf-Fn-ShY" secondAttribute="width" id="Tib-qA-HRA"/>
+                            <constraint firstAttribute="trailing" secondItem="PYt-cn-LH8" secondAttribute="trailing" constant="16" id="b8L-Jd-kgF"/>
+                            <constraint firstItem="PYt-cn-LH8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="flJ-6b-Jn0"/>
+                            <constraint firstItem="k3c-Ml-dl8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="h9U-Ee-z64"/>
+                            <constraint firstItem="Wpf-Fn-ShY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jVD-KF-dok"/>
+                            <constraint firstItem="k3c-Ml-dl8" firstAttribute="width" secondItem="4lG-Dp-gRJ" secondAttribute="width" id="kAP-Et-i63"/>
+                            <constraint firstItem="4lG-Dp-gRJ" firstAttribute="leading" secondItem="k3c-Ml-dl8" secondAttribute="trailing" constant="8" id="mg9-GU-OWX"/>
+                            <constraint firstItem="teh-Lv-SfH" firstAttribute="leading" secondItem="4lG-Dp-gRJ" secondAttribute="trailing" constant="8" id="r3C-dN-CEk"/>
+                            <constraint firstItem="PYt-cn-LH8" firstAttribute="top" secondItem="4lG-Dp-gRJ" secondAttribute="bottom" constant="8" id="uCc-Kh-lYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="typeTextView" destination="PYt-cn-LH8" id="3VQ-r1-6ZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
